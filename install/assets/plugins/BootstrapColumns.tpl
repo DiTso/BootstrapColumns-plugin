@@ -7,9 +7,9 @@
  * @category plugin
  * @version  RC 1.4
  * @author  Nicola Lambathakis http://www.tattoocms.it/
- * @internal @properties &ColumnLChunk= Left Sidebar Chunk:;string;Start-Left-Sidebar &ColumnRChunk= Right Sidebar Chunk:;string;Start-Right-Sidebar &ColumnL2Chunk= 2 Left Sidebar Chunk:;string;Start-Left-Sidebar2 &ColumnR2Chunk= 2 Right Sidebar Chunk:;string;Start-Right-Sidebar2 &ColumnWidth= Sidebar Width in two columns layout:;list;3,4,6;4
+ * @internal @properties &ColumnLChunk= Left Sidebar Chunk:;string;Left-Sidebar &ColumnRChunk= Right Sidebar Chunk:;string;Right-Sidebar &ColumnL2Chunk= 2 Left Sidebar Chunk:;string;Left-Sidebar2 &ColumnR2Chunk= 2 Right Sidebar Chunk:;string;Right-Sidebar2 &ColumnWidth= Sidebar Width in two columns layout:;list;3,4,6;4
  * @internal @events OnLoadWebDocument
- * @internal @modx_category Start
+ * @internal @modx_category Bootstrap
  * @internal @installset base, sample
  */
 /**
@@ -243,4 +243,4 @@ $modx->setPlaceholder('ColumnR2Content', "$CR2Chunk");
 	 }
 $CLChunk = $modx->getChunk(''.$ColumnLChunk.'');
 $modx->setPlaceholder('ColumnLContent', "$CLChunk");
- }	
+ }
